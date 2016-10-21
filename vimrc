@@ -48,3 +48,7 @@ nnoremap E $
 " $/^ doesn't do anything
 nnoremap $ <nop>
 nnoremap ^ <nop>
+
+" move vertically by visual line
+nnoremap j gj
+nnoremap k gk
