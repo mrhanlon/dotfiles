@@ -41,14 +41,15 @@ set foldmethod=indent
 
 " MOVEMENT
 
-" move to beginning/end of line
-nnoremap B ^
-nnoremap E $
-
-" $/^ doesn't do anything
-nnoremap $ <nop>
-nnoremap ^ <nop>
+"" move to beginning/end of line
+"nnoremap B ^
+"nnoremap E $
+"
+"" $/^ doesn't do anything
+"nnoremap $ <nop>
+"nnoremap ^ <nop>
 
 " move vertically by visual line
 nnoremap j gj
 nnoremap k gk
+

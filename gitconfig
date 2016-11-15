@@ -36,3 +36,8 @@
   rn = branch -m
   cam = commit -a -m
   cp = cherry-pick
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	lol = log --graph --decorate --abbrev-commit --all --date=local --pretty=format:\"%C(auto)%h%d %C(blue)%an %C(green)%cd %C(red)%GG %C(reset)%s\" --date=local
+
+[core]
+	excludesfile = /Users/mhanlon/.gitignore_global
