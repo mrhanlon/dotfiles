@@ -85,15 +85,17 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # PATH
-export PATH="$HOME/.local/bin:/usr/X11/bin:$PATH"
-
-# Homebrew
-export HOMEBREW_GITHUB_API_TOKEN=839afca5efcba9d0aaf1dd8918f666673dbd168c
+export PATH="$HOME/bin:/usr/X11/bin:/usr/local/opt/python/libexec/bin:$PATH"
 
 # Python virtualenvwrapper
 source /usr/local/bin/virtualenvwrapper.sh
 
 # Any extra local configs
 if [[ -a $HOME/.zshrc-local ]]; then
-  source ~/.zshrc-local
+  source $HOME/.zshrc-local
 fi
+
+if [[ -a $HOME/.aliases ]]; then
+  source $HOME/.aliases
+fi
+

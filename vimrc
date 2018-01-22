@@ -1,5 +1,8 @@
 " A Good `.vimrc` from https://dougblack.io/words/a-good-vimrc.html
 
+" PLUGINS
+filetype plugin on
+let g:auto_save = 1 
 
 " COLORS
 
@@ -17,6 +20,8 @@ set tabstop=4
 set softtabstop=4
 set expandtab
 
+" BACKSPACE
+set backspace=2
 
 " UI CONFIG
 
@@ -33,10 +38,10 @@ set hlsearch
 
 " FOLDING
 
-set foldenable
-set foldlevelstart=10
-set foldnestmax=10
-set foldmethod=indent
+"set foldenable
+"set foldlevelstart=10
+"set foldnestmax=10
+"set foldmethod=indent
 
 
 " MOVEMENT
