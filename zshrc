@@ -87,9 +87,6 @@ source $ZSH/oh-my-zsh.sh
 # PATH
 export PATH="$HOME/bin:/usr/X11/bin:/usr/local/opt/python/libexec/bin:$PATH"
 
-# Python virtualenvwrapper
-source /usr/local/bin/virtualenvwrapper.sh
-
 # Any extra local configs
 if [[ -a $HOME/.zshrc-local ]]; then
   source $HOME/.zshrc-local
