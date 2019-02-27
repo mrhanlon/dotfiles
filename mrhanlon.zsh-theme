@@ -1,3 +1,6 @@
+#
+# based on themes/steeef.zsh-theme
+#
 # prompt style and colors based on Steve Losh's Prose theme:
 # https://github.com/sjl/oh-my-zsh/blob/master/themes/prose.zsh-theme
 #
@@ -79,6 +82,8 @@ add-zsh-hook preexec steeef_preexec
 function steeef_chpwd {
     PR_GIT_UPDATE=1
 }
+add-zsh-hook chpwd steeef_chpwd
+
 function steeef_precmd {
     if [[ -n "$PR_GIT_UPDATE" ]] ; then
         # check for untracked files or updated submodules, since vcs_info doesn't
